@@ -1,9 +1,12 @@
-// 1. Write a JavaScript function to check whether an `input` is an array or not. Go to the editor
-// Test Data :
-// console.log(is_array('w3resource'));
-// console.log(is_array([1, 2, 4, 0]));
+// 1. Write a JavaScript function to check whether an `input` is an array or not.
 // false
 // true
+
+const isArray = input => Array.isArray(input);
+
+// Test Data :
+console.log(isArray('w3resource'));
+console.log(isArray([1, 2, 4, 0]));
 
 // 2. Write a simple JavaScript program to join all elements of the following array into a string.
 // Sample array : myColor = ["Red", "Green", "White", "Black"];

@@ -12,8 +12,16 @@ console.log(isArray([1, 2, 4, 0]));
 // Sample array : myColor = ["Red", "Green", "White", "Black"];
 // Expected Output :
 // "Red,Green,White,Black"
-// "Red,Green,White,Black"
 // "Red+Green+White+Black"
+
+const arrayToString = (array) => {
+  const result = array.toString();
+  return result;
+};
+
+// TEST
+console.log(arrayToString(['Red', 'Green', 'White', 'Black']));
+console.log(arrayToString(['Red', 'Green', 'White', 'Black'].join('+')));
 
 // 3. Write a JavaScript program which accept a number as
 // input and insert dashes (-) between each two even numbers.

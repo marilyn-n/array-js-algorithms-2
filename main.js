@@ -69,3 +69,20 @@ printRows(arrayOfArrays);
 // 5. Write a JavaScript program which accept a number as
 // input and insert dashes (-) between each two even numbers.
 // For example if you accept 025468 the output should be 0-254-6-8.
+
+const evenNumbers = (num) => {
+  const evenNum = [];
+  const oddNum = [];
+  const str = num.toString();
+
+  for (let x = 0; x < str.length; x++) {
+    if (str[x] % 2 === 0) {
+      evenNum.push(str);
+    } if (str[x] % 2 !== 0) {
+      oddNum.push(str[x]);
+    }
+  }
+  return `${evenNum} are even numbers ${oddNum} are not even numbers`;
+};
+
+console.log(evenNumbers(254758));

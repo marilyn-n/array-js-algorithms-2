@@ -77,12 +77,12 @@ const evenNumbers = (num) => {
 
   for (let x = 0; x < str.length; x++) {
     if (str[x] % 2 === 0) {
-      evenNum.push(str);
-    } if (str[x] % 2 !== 0) {
+      evenNum.push(str[x]);
+    } else if (str[x] % 2 !== 0) {
       oddNum.push(str[x]);
     }
   }
-  return `${evenNum} are even numbers ${oddNum} are not even numbers`;
+  return `${evenNum.join('-')} are even numbers ${oddNum.join('-')} are not even numbers`;
 };
 
 console.log(evenNumbers(254758));

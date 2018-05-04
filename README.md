@@ -1,3 +1,3 @@
-# JavaScript Array - Exercises
+# JavaScript Array and Object - Exercises
 
-5 basic array exercises 
+basic array and object exercises 

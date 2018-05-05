@@ -32,28 +32,32 @@ const removeKey = () => {
 console.log(`${Object.keys(student)} * before deleting property`);
 console.log(removeKey());
 
-// const showKeys = console.log(Object.keys(student));
-// console.log(showKeys);
 // 3. Write a JavaScript program to display the reading status
 // (i.e. display book name, author name and reading status) of the following books.
 
-// var library = [
-//    {
-//        author: 'Bill Gates',
-//        title: 'The Road Ahead',
-//        readingStatus: true
-//    },
-//    {
-//        author: 'Steve Jobs',
-//        title: 'Walter Isaacson',
-//        readingStatus: true
-//    },
-//    {
-//        author: 'Suzanne Collins',
-//        title:  'Mockingjay: The Final Book of The Hunger Games',
-//        readingStatus: false
-//    }];
+const library = [
+  {
+    author: 'Bill Gates',
+    title: 'The Road Ahead',
+    readingStatus: true,
+  },
+  {
+    author: 'Steve Jobs',
+    title: 'Walter Isaacson',
+    readingStatus: true,
+  },
+  {
+    author: 'Suzanne Collins',
+    title: 'Mockingjay: The Final Book of The Hunger Games',
+    readingStatus: false,
+  }];
 
+const displayLibrary = () => {
+  const res = library;
+  return res;
+};
+
+console.log(displayLibrary());
 // 4. Write a JavaScript program to create a Clock.
 // Note: The output will come every second.
 // Expected Console Output :

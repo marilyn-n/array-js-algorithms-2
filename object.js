@@ -7,18 +7,33 @@ const student = {
 };
 // Sample Output: name,sclass,rollno
 
-const objKeys = () => Object.keys(student);
-console.log(objKeys().join(','));
+const objKeys = () => {
+  const keys = Object.keys(student).join(',');
+  return keys;
+};
+console.log(objKeys());
 
 
 // 2. Write a JavaScript program to delete the rollno property from the following object.
-// Also print the object before or after deleting the property. Go to the editor
+// Also print the object before or after deleting the property.
 // Sample object:
 // var student = {
 // name : "David Rayy",
 // sclass : "VI",
 // rollno : 12 };
 
+const removeKey = () => {
+  const removedKey = delete student.rollno;
+  if (removedKey === true) {
+    return `${Object.keys(student)} * rollno property has been deleted`;
+  }
+};
+
+console.log(`${Object.keys(student)} * before deleting property`);
+console.log(removeKey());
+
+// const showKeys = console.log(Object.keys(student));
+// console.log(showKeys);
 // 3. Write a JavaScript program to display the reading status
 // (i.e. display book name, author name and reading status) of the following books.
 
